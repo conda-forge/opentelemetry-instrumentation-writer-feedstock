@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-writer
-  version: "0.63.0"
+  version: "0.63.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_writer-${{ version }}.tar.gz
-  sha256: a3bc3bf583a4914ea8c7573859b984504d41ec9b39a0d288b22aecc0dc3fb42b
+  sha256: 06b8e08bfc2003830026a9ac5455d3ea3ba48cac3adb49289be441a3260e8290
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
